@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alura Agente</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>🤖 Alura Agente</h1>
+      <p>Pregúntame sobre los documentos internos de la empresa</p>
+      <button id="reset-btn" type="button" class="reset-btn">Nueva conversación</button>
+    </header>
+
+    <main id="chat" class="chat-window"></main>
+
+    <form id="chat-form" class="chat-form">
+      <input
+        id="question-input"
+        type="text"
+        placeholder="Escribe tu pregunta..."
+        autocomplete="off"
+        required
+      />
+      <button type="submit" id="send-btn">Enviar</button>
+    </form>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
