@@ -22,6 +22,3 @@ if not GEMINI_API_KEY:
     print("[WARN] GEMINI_API_KEY no está configurada. Define una variable de entorno o un archivo .env")
 
 
-print("API cargada:", bool(GEMINI_API_KEY))
-print("Longitud:", len(GEMINI_API_KEY))
-print("Prefijo:", GEMINI_API_KEY[:12])
