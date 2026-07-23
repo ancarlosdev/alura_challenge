@@ -33,11 +33,14 @@ El historial de la conversación se guarda únicamente en memoria del navegador 
 
 1. Clonar el repositorio y entrar a la carpeta del proyecto.
 
-2. Crear un entorno virtual e instalar las dependencias:
+2. Crear un entorno virtual con Python 3.12 (el proyecto no es compatible con versiones más nuevas, como 3.13 o 3.14, debido a incompatibilidades de algunas dependencias) e instalar los paquetes:
    ```
-   python -m venv .venv
-   .venv\Scripts\activate     # en Windows
-   source .venv/bin/activate  # en Mac/Linux
+   py -3.12 -m venv .venv          # en Windows
+   python3.12 -m venv .venv        # en Mac/Linux
+
+   .venv\Scripts\activate          # en Windows
+   source .venv/bin/activate       # en Mac/Linux
+
    pip install -r requirements.txt
    ```
 
